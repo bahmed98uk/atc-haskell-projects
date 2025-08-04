@@ -11,6 +11,7 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
+    export PATH=$PATH:$HOME/.cabal/bin
     cabal update
   '';
 }
